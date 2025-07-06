@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luide Lima - Advogado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body>
+
+     <!-- Botão Hamburguer -->
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+
+
+    <nav  id="menu-principal" class="menu" aria-label="Menu principal" role="navigation">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#atuacao">Áreas de Atuação</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#trajetoria">A Trajetória</a></li>
+            <li><a href="#deixe-sua-dúvida">Deixe sua dúvida</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <button id="toggle-dark" class="botao-modo">
+        <img src="img/Lua.PNG" alt="Ícone para alterar modo claro e escuro" id="theme-icon" width="20px" height="20px">
+        <span id="theme-text"></span>
+    </button>
+
+    <header id="inicio" class="header-com-bg" data-aos="zoom-in">
+        <div class="header-content">
+            <h1>Está em busca de um advogado em Salvador‑BA?</h1>
+            <p>Com anos de experiência e atendimento personalizado, estou pronto para ajudar você.</p>
+            <a href="https://api.whatsapp.com/send?phone=5571992721012" class="botao">Entre em contato</a>
+        </div>
+    </header>
+
+    <section id="atuacao" data-aos="zoom-in">
+        <h2 class="center">Áreas de Atuação</h2>
+        <div class="cards-container">
+            <div class="card" style="background-image: url(img/Balança.png);">
+                 <h3>Direito Cível</h3>
+                <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Cível')">Saiba mais</button>
+            </div>
+            <div class="card" style="background-image: url(img/Livro.png);">
+                <h3>Direito Digital</h3>
+               <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Digital')">Saiba mais</button>
+            </div>
+            <div class="card" style="background-image: url(img/Acordo.png);">
+                <h3>Direito Trabalhista</h3>
+               <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Trabalhista')">Saiba mais</button>
+            </div>
+            <div class="card" style="background-image: url(img/Malhete.png);">
+                <h3>Direito Previdenciário</h3>
+                <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Previdenciário')">Saiba mais</button>
+            </div>
+              <div class="card" style="background-image: url(img/Acordo.png);">
+                <h3>Direito do Consumidor</h3>
+                <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Consumidor')">Saiba mais</button>
+            </div>
+              <div class="card" style="background-image: url(img/Balança.png);">
+                <h3>Direito Empresarial</h3>
+                <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Direito Empresarial')">Saiba mais</button>
+            </div>
+              <div class="card" style="background-image: url(img/Livro.png)">
+                <h3>Propriedade Intelectual</h3>
+                <button class="saiba-mais" onclick="abrirPopup('Conteúdo detalhado sobre Propriedade Intelectual')">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" data-aos="zoom-in">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-container">
+            <img src="img/LuideLima.jpg" alt="Foto do advogado Luide Lima" class="foto adv">
+            <div class="sobre-info">
+                <p>Luide Lima é um advogado com sólida formação jurídica, reconhecido pela ética, dedicação e resultados práticos.</p>
+                <p>Com experiência em diversas áreas do Direito, atua com excelência na defesa dos interesses de seus clientes.</p>
+                <p>Com atuação em mais de 300 processos judiciais e inúmeros administrativos</p>
+                <p>Pós-graduado em Direito Penal na Universidade Salvador - UNIFACS</p>
+                <p>Pós-graduado em Direito do Trabalho na Faculdade do Ministério Público de Santa Catarina</p>
+                <p>Pós-graduado em Direito do Previdenciário na Faculdade do Ministério Público de Santa Catarina</p>
+                <p>Pós-graduando em Ciência de Dados e Machine Learning na PUC - CAMPINAS</p>
+                <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trajetoria" data-aos="zoom-in">	
+        <h2>A Trajetória</h2>
+        <p>Aprovado na UFBA no curso de Ciência da Computação em 2011, com apenas 17 anos, cursou até o 6º semestre e decidiu abandonar para trilhar no caminho do Direito</p>
+        <p>Formado com Láurea em Direito na Faculdade Batista Brasileira (média geral de todo curso 8,5)</p>
+        <p>Membro da comissão permanente de Direito Digital da OAB/BA, reflete a sua seriedade e compromisso com a advocacia bem como a excelência do seu trabalho.</p>
+    
+    </section>
+
+     <section id="deixe-sua-dúvida" class="centralizar-form" data-aos="zoom-in">
+
+        <form action="https://api.sheetmonkey.io/form/7aHyRAGwS1izva2iCJSUxy" method="post">
+            <fieldset>
+                <legend>Fale com o Advogado</legend> 
+                    <h3>Informações Pessoais</h3>
+
+                    <label for="nome"> Nome Completo: </label>
+                    <input type="text" name="Nome" id="nome" placeholder="Ex-Luide Lima" required autocomplete="name"> &nbsp;
+                    
+                    <label for="email"> E-mail: </label>  
+                    <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required autocomplete="email"> &nbsp;
+                    
+                    <label for="telefone">Telefone / Whatsapp:  </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="71 99999-9999" required autocomplete="tel"> &nbsp;
+
+                            <label for="cidade-uf">Cidade/UF</label>
+                            <select name="cidade-uf" id="cidade-uf" required autocomplete="address-level2">
+                                <option value="Selecione">Selecione</option>
+                                <option value="Salvador‑BA">Salvador‑BA</option>
+                            </select> <br>
+                            <br>
+
+                            <h3>Área de Atuação / Tipo de Caso</h3>
+
+                            <label for="Direito">Qual é o tema do seu caso?</label> 
+                            <select name="Direito" id="Direito">
+                                <option value="Selecione"> Selecione </option>
+                                <option value="Cível"> Direito Cível </option>
+                                <option value="Digital"> Direito Digital </option>
+                                <option value="Trabalhista"> Direito Trabalhista </option>
+                                <option value="Previdenciário"> Direito Previdenciário </option>
+                                <option value="Família"> Direito de Família </option>
+                                <option value="Consumidor"> Direito de Consumidor </option>
+                                <option value="Trânsito"> Direito de Trânsito </option>
+                                <option value="Intelectual"> Propriedade Intelectual </option>
+                            </select> &nbsp;
+                    <fieldset>
+                        <legend>já tem um processo em andamento?</legend>
+                        <label for="processo-sim"> Sim
+                            <input type="radio" name="processo" id="processo-sim" value="Sim">
+                        </label>
+
+                        <label for="processo-nao"> Não 
+                            <input type="radio" name="processo" id="processo-nao" value="nao">
+                        </label>
+                    </fieldset>
+
+                <h3>Descrição do Problema</h3>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Digite aqui..." required></textarea> <br>
+
+                <input type="checkbox" id="termos" required class="checkbox"> 
+                <label for="termos">Autorizo o uso dos meus dados para fins de contato e atendimento, conforme a LGPD.</label><br>
+                <br> 
+                <button type="submit"> Enviar </button>
+            </fieldset>
+        </form>
+     </section>
+
+     <section id="faq" data-aos="zoom-in">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-pergunta" aria-expanded="false">Como é feito o atendimento inicial?</button>
+                <div class="faq-resposta">O atendimento pode ser feito online ou presencialmente, mediante agendamento prévio.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta" aria-expanded="false">Quais documentos devo levar?</button>
+                <div class="faq-resposta">Documentos pessoais, provas do caso e quaisquer registros relacionados ao problema.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta" aria-expanded="false">Em quanto tempo terei retorno?</button>
+                <div class="faq-resposta">Em geral, o primeiro retorno é dado em até 24 horas úteis após o contato.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta" aria-expanded="false">Quais áreas do Direito você atende?</button>
+                <div class="faq-resposta">Atuo nas áreas Cível, Trabalhista, Digital, Previdenciária, Família, Consumidor e outras.</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class = "footer">
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Telefone: (71) 99272-1012</p>
+        <p>Email: adv.luidelima@gmail.com</p>
+    </section>
+        <p>&copy; 2025 Luide Lima. Todos os direitos reservados.</p>
+    </footer>
+
+       <!-- Modal popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="fecharPopup()">&times;</span>
+            <p id="popup-texto"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
