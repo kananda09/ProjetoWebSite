@@ -2,7 +2,7 @@
 /*Responsivo até 600px*/
 @media (max-width: 600px){
     .header-com-bg{
-        padding: 100px 20px;
+            padding: 100px 20px;
     }
 
     .sobre-container{
@@ -43,6 +43,20 @@
     }
 }
 
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
 /* RESPONSIVIDADE DO MENU HAMBURGUER ATE 768px */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -72,10 +86,6 @@
     }
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -99,10 +109,6 @@ body.dark-mode nav, body.dark-mode form, body.dark-mode.card {
     background-color: #1e1e1e;
     color: white;
 }
-body.dark-mode .faq-resposta {
-    background-color: #ffffff; 
-    color: #000000;
-}
 
 /* BOTÃO MODO ESCURO*/
 .botao-modo {
@@ -119,9 +125,11 @@ body.dark-mode .faq-resposta {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    outline: transparent;
 }
 
 body.dark-mode .botao-modo {
+    background-color: transparent;
     color: #ffffff;
 }
 
@@ -155,12 +163,11 @@ nav a {
 
 /*HEADER COM IMAGEM*/
 .header-com-bg {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/LogoLuideLima.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/LogoLuideLima.jpg') no-repeat center/cover;
     color: white;
     padding: 200px 20px;
     text-align: center;
 }
-
 .header-content {
     position: relative;
     z-index: 1;
@@ -302,7 +309,7 @@ nav a {
     transition: transform 0.7s ease;
 }
 
-/* Gira a seta */
+/* GIRA A SETA */
 .faq-item.open .faq-pergunta::after {
     transform: rotate(90deg);
 }
@@ -317,6 +324,11 @@ nav a {
 .faq-item.open .faq-resposta {
     max-height: 200px; 
     padding: 12px;
+}
+
+body.dark-mode .faq-resposta {
+    background-color: #ffffff; 
+    color: #000000;
 }
 
 /* FORMULÁRIO */
@@ -359,7 +371,6 @@ fieldset{
     border: none;
 }
 
-
 /* RODAPÉ*/
 footer {
   background-color: #0e5328;
@@ -380,20 +391,6 @@ section {
   text-align: center;
 }
 
-/* BOTÃO HAMBÚRGUER */
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 1001;
-    cursor: pointer;
-}
-
 /* ANIMAÇÕES */
 @keyframes wave {
     0% { transform: scale(1); }
@@ -404,4 +401,8 @@ section {
 @keyframes slideInFromLeft{
     0% {transform: translateX(-200px); opacity: 0;}
     100% { transform: translateX(0); opacity: 1;}
+}
+
+html{
+    scroll-behavior: smooth;
 }

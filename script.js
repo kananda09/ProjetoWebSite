@@ -1,3 +1,4 @@
+
 function abrirPopup(texto) {
     document.getElementById('popup-texto').innerText = texto;
     document.getElementById('popup').style.display = 'flex';
