@@ -83,20 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-/*Antigo código
-
-document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.getElementById("toggle-dark");
-    btn.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        btn.textContent = document.body.classList.contains("dark-mode")
-        ? "Sol Modo Claro"
-        : "Lua Modo Escuro";
-    });
-});
-*/
-
 // Menu Hamburguer
 const toggleMenuBtn = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('nav.menu');
@@ -114,3 +100,16 @@ document.querySelectorAll('nav.menu a').forEach(link => {
     });
 });
 
+
+/*Antigo código
+
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById("toggle-dark");
+    btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        btn.textContent = document.body.classList.contains("dark-mode")
+        ? "Sol Modo Claro"
+        : "Lua Modo Escuro";
+    });
+});
+*/

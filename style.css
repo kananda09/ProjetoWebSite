@@ -125,6 +125,11 @@ body.dark-mode .botao-modo {
     color: #ffffff;
 }
 
+body.dark-mode .popup-content {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
 /*NAVEGAÇÃO*/
 nav {
     background: #222;
